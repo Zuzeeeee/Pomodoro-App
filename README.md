@@ -1,2 +1,2 @@
 # Pomodoro-App
-A pomodoro app to help track the time of focus and downtime
+A simple pomodoro clocl app to help track the focused time and break time.
