@@ -127,6 +127,7 @@ class PomodoroClock extends HTMLElement {
       clearInterval(this.myInterval);
       this.stage = this.stage === "work" ? "rest" : "work";
       this.$startButton.innerHTML = "start " + this.stage;
+      this.$stage.innerText = this.stage;
 
       localStorage.setItem("remainingTime", this.totalSeconds);
     }
