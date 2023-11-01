@@ -5,19 +5,6 @@ I created it as a learning project, to help me understand concepts like web-comp
 
 <a href="https://pomodoro-app-seven-topaz.vercel.app" target="_blank">Online version</a>
 
-<div style="display: flex;">
-  <img style="width: 300px;
-    height: 350px;
-    object-fit: cover;
-    object-position: 50% 0%;
-    clip-path: inset(0 11% 9% 14%);" src="./images/pomodoro_stop.png">
-  <img style="width: 300px;
-    height: 350px;
-    object-fit: cover;
-    object-position: 50% 0%;
-    clip-path: inset(0 11% 9% 14%);" src="./images/pomodoro_run.png">
-</div>
-
 # Pomodoro Technique
 
 Pomodoro is a time management technique consisting in break work in intervals.
