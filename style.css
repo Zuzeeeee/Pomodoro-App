@@ -14,7 +14,7 @@ header {
   display: inline-flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 auto 15px auto;
+  margin: 15% auto 15px auto;
 }
 
 h1 {
@@ -37,6 +37,16 @@ label {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  font-family: 'Droid Sans Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-size: 80%;
+}
+
+label input {
+  border-radius: 5px;
+  background-color: aliceblue;
 }
 
 .container {
@@ -59,7 +69,6 @@ label {
 
 .app-container {
   text-align: center;
-  
 }
 
 .app-circle {
@@ -68,9 +77,6 @@ label {
   align-items: center;
   width: 200px;
   height: 200px;
-  border: solid 6px;
-  border-radius: 200px;
-  border-color: #bf5239;
 }
 
 .app-counter-box {
@@ -89,6 +95,10 @@ button {
   color: #d8e9ef;
 }
 
+button:hover {
+  color: #90c0d1;
+}
+
 #stage {
   font-size: 80%;
   text-transform: uppercase;
@@ -99,10 +109,48 @@ button {
   font-size: 75%;
 }
 
-#btn-start:hover {
-  color: #90c0d1;
+.base-timer {
+  position: relative;
 }
 
-#btn-reset:hover {
-  color: #90c0d1;
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: rgb(119, 119, 119);
+}
+
+.base-timer__label {
+  position: absolute;
+  
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.base-timer__path-remaining {
+  /* Just as thick as the original ring */
+  stroke-width: 7px;
+
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  /* One second aligns with the speed of the countdown timer */
+  transition: 1s linear all;
+
+  /* Allows the ring to change color when the color value updates */
+  stroke: currentColor;
+}
+
+.base-timer__svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
 }
