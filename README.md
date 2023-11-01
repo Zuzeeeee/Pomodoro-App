@@ -19,9 +19,17 @@
 A simple pomodoro counter to help measure focus and rest time.
 I created it as a learning project, to help me understand concepts like web-components and the pub-sub pattern.
 
-<div class="container">
-  <img class="img-app" src="./images/pomodoro_stop.png">
-  <img class="img-app" src="./images/pomodoro_run.png">
+<div style="display: flex;">
+  <img style="width: 300px;
+  height: 400px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    clip-path: inset(0 11% 9% 14%);" src="./images/pomodoro_stop.png">
+  <img style="width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    clip-path: inset(0 11% 9% 14%);" src="./images/pomodoro_run.png">
 </div>
 
 # Pomodoro Technique
