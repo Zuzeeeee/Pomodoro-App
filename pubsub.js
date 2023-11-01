@@ -9,15 +9,15 @@ const TypeEvents = {
   TIME_LEFT: "remainingTime",
 }
 
-const publish = (ev, value) => {
+const publish = async (ev, value) => {
   save(ev, value);
-  
+
   sub[ev]?.forEach(notify => {
     notify(value);
   });
 };
 
-const subscribe = (ev, notify) => {
+const subscribe = async (ev, notify) => {
   if (sub[ev]) {
     sub[ev].push(notify);
   } else {
