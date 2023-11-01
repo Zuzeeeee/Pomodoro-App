@@ -3,6 +3,8 @@
 A simple pomodoro counter to help measure focus and rest time.
 I created it as a learning project, to help me understand concepts like web-components and the pub-sub pattern.
 
+<a href="https://pomodoro-app-seven-topaz.vercel.app" target="_blank">Online version</a>
+
 <div style="display: flex;">
   <img style="width: 300px;
     height: 350px;
