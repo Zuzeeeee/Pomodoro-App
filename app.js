@@ -18,8 +18,8 @@ $circleDash.style["color"] = remainingPathColor;
 const updateCountdown = async () => {
   let timeLeft = await fetchData(TypeEvents.TIME_LEFT);
   let stage = await fetchData("stage");
-  
-  const per = ( timeLeft / ((stage === "work" ? await getWorkValue() : await getRestValue()) * 60)) * 283;
+
+  const per = ( timeLeft / ((stage === "work" ? await getWorkValue()??25 : await getRestValue()??5) * 60)) * 283;
   const circleDash = `${per.toFixed(0)} 283`;
   $circleDash.setAttribute("stroke-dasharray", circleDash);
 };
